@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 50px 0;
+        }
+        iframe, video, img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        
+        <div class="section" id="html5-banner">
+            <h2>HTML5 Banner</h2>
+            <iframe src="your-html5-banner.html" width="300" height="250"></iframe>
+        </div>
+
+        <div class="section" id="video-banner">
+            <h2>Video Banner</h2>
+            <video controls width="600">
+                <source src="your-video-banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section" id="image-banner">
+            <h2>Image Banner</h2>
+            <img src="your-image-banner.jpg" alt="Image Banner" width="600">
+        </div>
+    </div>
+</body>
+</html>
