@@ -111,3 +111,42 @@ video:hover {
     background-color: none;
     transform: scale(1.05);
 }
+
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    font-size: 1rem;
+    color: #2f2f2f;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #2f2f2f;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
