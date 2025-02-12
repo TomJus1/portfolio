@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.campaign-grid {
+    column-count: 3; /* Adjust number of columns based on screen size */
+    column-gap: 15px;
+}
+
+.campaign-tile {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    text-align: center;
+    cursor:pointer;
+}
+
+.campaign-tile img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) brightness(70%);
+    transition: filter 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.campaign-tile:hover img {
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.05);
+}
+
+.campaign-tile p {
+    position: relative;
+    margin-top: 10px;
+    font-weight: bold;
+    z-index: 2; /* Ensures text is above the image */
+    /*background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+#campaign-details {
+    display: none;
+    margin-top: 20px;
+}

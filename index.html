@@ -3,48 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .section {
-            margin: 50px 0;
-        }
-        iframe, video, img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title> TJ Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
+
     <div class="container">
-        <h1>My Portfolio</h1>
-        
-        <div class="section" id="html5-banner">
-            <h2>HTML5 Banner</h2>
-            <iframe src="your-html5-banner.html" width="300" height="250"></iframe>
+        <h1 class="my-4">Portfolio</h1>
+        <div class="campaign-grid">
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/LP.html')">
+                <img src="campaigns/Assets/LP/preview.jpg" alt="Lietuvos Paštas">
+                <p>Lietuvos Paštas</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Tele2.html')">
+                <img src="campaigns\Assets\Tele2\Preview.jpg" alt="Tele2">
+                <p>Tele2</p>
+            </div>
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/Audi.html')">
+                <img src="campaigns/Assets/Audi/Preview.jpg" alt="Audi">
+                <p>Audi</p>
+            </div>
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/Birute.html')">
+                <img src="campaigns/Assets/Birute/Preview.jpg" alt="Birutė">
+                <p>Birutė</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/NordSecurity.html')">
+                <img src="campaigns\Assets\NordSecurity\Preview.jpg" alt="Nord Security">
+                <p>Nord Security</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Espumisan.html')">
+                <img src="campaigns\Assets\Espumisan\Preview.jpg" alt="Espumisan">
+                <p>Espumisan</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Fielman.html')">
+                <img src="campaigns\Assets\Fielman\Preview.jpg" alt="Fielman">
+                <p>Fielman</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Prostamol.html')">
+                <img src="campaigns\Assets\Prostamol\Preview.jpg" alt="Prostamol">
+                <p>Prostamol</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/KakeMake.html')">
+                <img src="campaigns\Assets\KakeMake\Preview.jpg" alt="Kake Make">
+                <p>Kake Make</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Kika.html')">
+                <img src="campaigns\Assets\Kika\Preview.jpg" alt="Kika">
+                <p>Kika</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/ProBro.html')">
+                <img src="campaigns\Assets\ProBro\Preview.jpg" alt="Pro Bro">
+                <p>Pro Bro</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/IKI.html')">
+                <img src="campaigns\Assets\IKI\Preview.jpg" alt="IKI">
+                <p>IKI</p>
+            </div>
+
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Scania.html')">
+                <img src="campaigns\Assets\Scania\Preview.jpg" alt="Scania">
+                <p>Scania</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/48Mobile.html')">
+                <img src="campaigns/Assets/48Mobile/preview.jpg" alt="48 Mobile">
+                <p>48 Mobile</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/VE.html')">
+                <img src="campaigns\Assets\VE\Preview.jpg" alt="VE">
+                <p>VE</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/VisionExpress.html')">
+                <img src="campaigns\Assets\VisionExpress\Preview.jpg" alt="Vision Express">
+                <p>Vision Express</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/ManoBilietas.html')">
+                <img src="campaigns\Assets\ManoBilietas\Preview.jpg" alt="Mano Bilietas">
+                <p>Mano Bilietas</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Pombear.html')">
+                <img src="campaigns\Assets\Pombear\Preview.jpg" alt="Pombear">
+                <p>Pombear</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Wise.html')">
+                <img src="campaigns\Assets\Wise\Preview.jpg" alt="Wise">
+                <p>Wise</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Narvesen.html')">
+                <img src="campaigns\Assets\Narvesen\Preview.jpg" alt="Narvesen">
+                <p>Narvesen</p>
+            </div>
+
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/Bite.html')">
+                <img src="campaigns\Assets\Bite\Preview.jpg" alt="Bitė">
+                <p>Bitė</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Monimoto.html')">
+                <img src="campaigns\Assets\Monimoto\Preview.jpg" alt="Monimoto">
+                <p>Monimoto</p>
+            </div>
+
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/Bancovo.html')">
+                <img src="campaigns/Assets/Bancovas/Preview.jpg" alt="Bancovo">
+                <p>Bancovo</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/BasketNews.html')">
+                <img src="campaigns/Assets/BasketNews/preview.jpg" alt="Basket News">
+                <p>Basket News</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/BlockNetwork.html')">
+                <img src="campaigns\Assets\BlockNetwork\Preview.jpg" alt="Block Network">
+                <p>Block Network</p>
+            </div>
+            <div class="campaign-tile col-md-4" onclick="showCampaign('campaigns/Compensa.html')">
+                <img src="campaigns\Assets\Compensa\Preview.jpg" alt="Compensa">
+                <p>Compensa</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/Egzotika.html')">
+                <img src="campaigns\Assets\Egzotika\Preview.jpg" alt="Egzotika">
+                <p>Egzotika</p>
+            </div>
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/GyviGali.html')">
+                <img src="campaigns\Assets\GyviGali\Preview.jpg" alt="Gyvi Gali">
+                <p>Gyvi Gali</p>
+            </div>
+
+            <div class="campaign-tile col-md-6" onclick="showCampaign('campaigns/VilniausVersloCentras.html')">
+                <img src="campaigns\Assets\VilniausVersloCentras\Preview.jpg" alt="Vilniaus Verslo Centras">
+                <p>Vilniaus Verslo Centras</p>
+            </div>
+
         </div>
 
-        <div class="section" id="video-banner">
-            <h2>Video Banner</h2>
-            <video controls width="600">
-                <source src="your-video-banner.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div class="section" id="image-banner">
-            <h2>Image Banner</h2>
-            <img src="your-image-banner.jpg" alt="Image Banner" width="600">
+        <div id="campaign-details">
+            <button onclick="hideCampaign()" class="btn btn-secondary mb-3">Back</button>
+            <div id="campaign-assets"></div>
         </div>
     </div>
+
 </body>
 </html>

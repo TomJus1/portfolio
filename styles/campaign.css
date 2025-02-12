@@ -1,0 +1,113 @@
+/* General Page Styling */
+body {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    /*border-radius: 10px;
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Title Styling */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.content-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Banners (Reklaminiai skydeliai) */
+.banner-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap instead of overflowing */
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%; /* Ensures banners don't overflow */
+}
+
+.banner-item {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%; /* Ensures banners don't exceed their container */
+}
+
+.banner-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Masonry Grid for Videos */
+.masonry-container {
+    column-count: 2;
+    column-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.masonry-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    /*box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
+/* Back Button */
+.btn-dark {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: none;
+}
+
+.btn-dark:hover {
+    background-color: none;
+    transform: scale(1.05);
+}
